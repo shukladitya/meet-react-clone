@@ -1,0 +1,63 @@
+.bottomBar{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: white;
+    background-color: #202025;
+    padding: 1.5rem 2rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .dateSection{
+        justify-content: start;
+        align-items: center;
+        width: 100%;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        .divider {
+                width: 1px;
+                height: 1rem;
+                color: white;
+                margin: 0 1rem;
+                background-color: white;
+                display: inline-block;
+            }
+        
+    }
+    .primaryButtons{
+        width: 60rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    .secondaryButtons{
+        width: 100%;
+        display: flex;
+        justify-content: end;
+    }
+
+    .moreBtn{
+        font-size: 2rem;
+        cursor: pointer;
+        display: none;
+    }
+   
+}
+
+@media (max-width:725px) {
+    .dateSection{
+        display: none;
+        
+    }
+}
+@media (max-width:600px) {
+    .moreBtn {
+            display: inline-block !important;
+            margin-left: 2rem;
+        }
+    .secondaryButtons{
+        display: none !important;
+    }    
+}

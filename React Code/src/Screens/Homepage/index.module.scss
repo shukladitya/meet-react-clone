@@ -1,0 +1,46 @@
+
+.scaffold{
+    background-color: #202025;
+    width: 100vw;
+    height: 100vh;
+    padding: 1rem 1rem;
+    resize: horizontal;
+    overflow: auto;
+    max-width: 100%;
+  .splitter{
+    display: flex;
+    justify-content: space-around;
+
+  }
+    .peopleHolder{
+       width: 100%;
+        margin: 0;
+        display: inline-grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 1rem;
+        grid-auto-rows: 12rem;
+    }
+    .panelHolder{
+        display: inline-block;
+        margin-left: 0rem;
+        
+        width: 0%;
+        border-radius: 0.8rem;
+        height: calc(100vh - 7.5rem);
+        background-color: white;
+        overflow: scroll;
+    }
+}
+
+@media (max-width:950px) {
+    .peopleHolder{
+        grid-template-columns: 1fr 1fr 1fr !important;
+        grid-auto-rows: 10rem !important;
+    }
+}
+@media (max-width:600px) {
+    .peopleHolder {
+        grid-template-columns: 1fr 1fr !important;
+        grid-auto-rows: 10rem !important;
+    }
+}

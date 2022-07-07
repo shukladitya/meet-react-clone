@@ -1,0 +1,41 @@
+.everythingButton{
+    position: relative;
+}
+.message {
+    position: absolute;
+    white-space: nowrap;
+    top: -1.8rem;
+    font-size: 0.8rem;
+    background-color: #3D4143;
+    padding: 3px 10px;
+    border-radius: 3px;
+    color: white;
+}
+.button{
+    padding: 0.7rem;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.button:hover{
+    filter:brightness(1.1);
+}
+
+
+.ripple {
+    background-position: center;
+    transition: background 0.2s;
+}
+
+.ripple:hover {
+    background: #8d959a radial-gradient(circle, transparent 1%, #8a9398 1%) center/15000%;
+}
+
+.ripple:active {
+    background-size: 100%;
+    transition: background 0s;
+}

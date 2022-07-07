@@ -1,0 +1,39 @@
+.card{
+    background-color: #35363B;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    .avatar{
+        height: 5rem;
+        width: 5rem;
+        border-radius: 5rem;
+        background-position: center;
+        background-size: cover;
+    }
+    .micIcon{
+        color: white;
+        background-color: #1E1F22;
+        padding: 6px;
+        font-size: 15px;
+        border-radius: 2rem;
+        position: absolute;
+        right: 0.5rem;
+        top: 0.5rem;
+    }
+    .nameLabel{
+        color: #030304d3;
+        color: white;
+        position: absolute;
+        bottom: 0.5rem;
+        left: 0.7rem;
+        font-size: 14px;
+    }
+    .btnSet{
+        position: absolute;
+        margin: auto;
+        background-color: #1e1f227b;
+        border-radius: 30px;
+    }
+}

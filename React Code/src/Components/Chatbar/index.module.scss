@@ -1,0 +1,83 @@
+.scaffold{
+    position: relative;
+    height: 100%;
+}
+.heading {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.closeBtn {
+    cursor: pointer;
+    background-color: transparent;
+    padding: 0.5rem;
+    color: rgb(40, 37, 37);
+    border-radius: 2rem;
+}
+
+.closeBtn:hover {
+    background-color: rgba(128, 128, 128, 0.51);
+}
+.info{
+    font-size: 0.8rem;
+    text-align: center;
+    background-color: rgba(211, 211, 211, 0.678);
+    margin: 1rem;
+    border-radius: 10px;
+    padding: 1rem;
+}
+.messages{
+    margin: 1rem;
+    font-size: 0.8rem;
+    div{
+        margin: 1rem ;
+        color: rgb(85, 85, 85);
+        span{
+            display: flex;
+            font-weight: bold;
+            p{
+                margin-left: 1rem;
+                font-weight: 400;
+            }
+        }
+    }
+}
+.inputWrapper {
+    position: relative;
+    margin-top: 1rem;
+    width: 100%;
+    padding: 1rem;
+    position: absolute;
+    bottom: 0rem;
+    right: 0;
+    left: 0;
+
+    span {
+        position: absolute;
+        right: 1.5rem;
+        top: 1.2rem;
+        font-size: 2rem;
+        color: rgb(187, 187, 187);
+        cursor: pointer;
+    }
+}
+
+.inputField {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.8rem 3rem 0.8rem 0.8rem;
+    border: none;
+    background-color: rgb(238, 237, 237);
+    border-radius: 5rem;
+    font-size: 0.8rem;
+}
+
+.inputField:active,
+.inputField:focus {
+    border: none;
+    outline: none; // add this
+
+}
